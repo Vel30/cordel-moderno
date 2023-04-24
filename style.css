@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+body {
+  font-family: "Verdana", sans-serif;
+}
+
+h1 {
+  font: small-caps 700 6rem "Passion One", cursive;
+}
+
+p:not(header p) {
+  font-family: "Sriracha", cursive;
+}
+
+a {
+  font-weight: bold;
+  color: inherit;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+header,
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+header {
+  padding: 2.5rem 0;
+}
+
+header p {
+  font-size: 0.9375rem;
+}
+
+section {
+  padding: 2rem;
+  background: center center / cover fixed;
+}
+
+section:nth-child(2n) {
+  box-shadow: inset 6px 6px 12px 0px hsla(0, 0%, 0%, 0.5);
+}
+
+section:nth-child(2n) p {
+  display: inline-block;
+  text-shadow: 4px 2px black;
+  padding: 1.5rem;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  color: white;
+}
+
+section:nth-child(2) {
+  background-image: url(./images/bg1.jpg);
+}
+
+section:nth-child(4) {
+  background-image: url(./images/bg2.jpg);
+}
+
+section p {
+  font-size: 3rem;
+}
+
+section p + p {
+  margin-top: 4rem;
+}
+
+footer {
+  margin-top: 6rem;
+  padding: 0.625rem 0;
+}
+
+@media only screen and (max-width: 37.5rem) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  section:nth-child(2n) p {
+    display: block;
+  }
+
+  section p {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 30rem) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  section:nth-child(2n) p {
+    padding: 0.5rem;
+  }
+
+  section p {
+    font-size: 1.5rem;
+  }
+
+  section p + p {
+    margin-top: 2rem;
+  }
+
+  footer {
+    margin-top: 4rem;
+  }
+}
